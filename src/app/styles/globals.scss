@@ -1,6 +1,6 @@
-@import "../../shared/styles/reset";
-@import "../../shared/styles/vars";
-@import "../../shared/styles/_mixins";
+@use "../../shared/styles/reset" as *;
+@use "../../shared/styles/vars" as *;
+@use "../../shared/styles/mixins" as *;
 
 body{
   font-family: var(--font-public-sans);

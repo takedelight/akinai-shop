@@ -1,5 +1,13 @@
-import s from './page.module.css';
+import { Button } from '@mantine/core';
+
+import s from './page.module.scss';
 
 export default function Home() {
-  return <section>hello world</section>;
+  return (
+    <section>
+      <Button className={s.button} variant={'filled'}>
+        asd
+      </Button>
+    </section>
+  );
 }
