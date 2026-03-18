@@ -1,0 +1,132 @@
+@mixin text-display-01 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+@mixin text-display-02 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.142;
+}
+
+@mixin text-display-03 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.166;
+}
+
+@mixin text-display-04 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@mixin text-display-05 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.222;
+}
+
+@mixin text-heading-01 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@mixin text-heading-02 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.142;
+}
+
+@mixin text-heading-03 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.333;
+}
+
+@mixin text-heading-06 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 3.5;
+}
+
+@mixin text-heading-07 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 3.428;
+}
+
+@mixin text-label-01 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.555;
+}
+
+@mixin text-label-02 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin text-label-03 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428;
+}
+
+@mixin text-label-04 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin text-label-05 {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.454;
+}
+
+@mixin text-body-xxl($weight: 400) {
+  font-size: 24px;
+  font-weight: $weight;
+  line-height: 1.333;
+}
+
+@mixin text-body-xl($weight: 400) {
+  font-size: 20px;
+  font-weight: $weight;
+  line-height: 1.4;
+}
+
+@mixin text-body-lg($weight: 400) {
+  font-size: 18px;
+  font-weight: $weight;
+  line-height: 1.333;
+}
+
+@mixin text-body-md($weight: 400) {
+  font-size: 16px;
+  font-weight: $weight;
+  line-height: 1.333;
+}
+
+@mixin text-body-sm($weight: 400) {
+  font-size: 14px;
+  font-weight: $weight;
+  line-height: 1.333;
+}
+
+@mixin text-body-xs($weight: 400) {
+  font-size: 12px;
+  font-weight: $weight;
+  line-height: 1.333;
+}
+
+@mixin container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding: 0 16px;
+  width: 100%;
+}
