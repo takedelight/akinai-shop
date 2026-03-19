@@ -3,6 +3,7 @@
 @use '../../shared/styles/mixins' as *;
 
 body {
+  color: var(--neutral-00);
   font-family: var(--font-public-sans);
 }
 

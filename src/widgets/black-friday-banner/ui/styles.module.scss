@@ -4,19 +4,20 @@
 .banner {
   background-color: var(--neutral-900);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 16px 0;
   position: relative;
 
   .content {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    @include container;
+    @include flex-between;
+
     width: 1320px;
   }
 
   .text {
     align-items: center;
+    color: var(--neutral-00);
     display: flex;
     gap: 12px;
 
@@ -30,7 +31,7 @@
     }
 
     .friday {
-      color: #fff;
+      color: var(--neutral-00);
 
       @include text-heading-03;
     }
@@ -38,7 +39,7 @@
 
   .discount {
     align-items: center;
-    color: #fff;
+    color: var(--neutral-00);
     display: flex;
     gap: 8px;
 
@@ -69,7 +70,7 @@
     align-items: center;
     background-color: var(--neutral-800);
     border: none;
-    color: #fff;
+    color: var(--neutral-00);
     cursor: pointer;
     display: flex;
     justify-content: center;

@@ -7,6 +7,7 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 
 import { BlackFridayBanner } from '@/widgets/black-friday-banner';
+import { Header } from '@/widgets/header';
 
 import { theme } from '@/shared/configs';
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
       <body className={`${publicSans.variable} wrapper`}>
         <MantineProvider theme={theme}>
           <BlackFridayBanner />
+          <Header />
 
           <main className="main">{children}</main>
         </MantineProvider>

@@ -126,7 +126,19 @@
 
 @mixin container {
   margin: 0 auto;
-  max-width: 1516px;
-  padding: 0 16px;
+  max-width: 1320px;
+  padding: 0 10px;
   width: 100%;
+}
+
+@mixin flex-align-center($gap: 12) {
+  align-items: center;
+  display: flex;
+  gap: $gap;
+}
+
+@mixin flex-between($align: center) {
+  align-items: $align;
+  display: flex;
+  justify-content: space-between;
 }
