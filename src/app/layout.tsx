@@ -9,7 +9,7 @@ import '@mantine/core/styles.css';
 import { BlackFridayBanner } from '@/widgets/black-friday-banner';
 import { Header } from '@/widgets/header';
 
-import { theme } from '@/shared/configs';
+import { theme } from '@/shared/configs/mantine';
 
 import './styles/globals.scss';
 
