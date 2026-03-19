@@ -1,18 +1,17 @@
-@use "../../shared/styles/reset" as *;
-@use "../../shared/styles/vars" as *;
-@use "../../shared/styles/mixins" as *;
+@use '../../shared/styles/reset' as *;
+@use '../../shared/styles/vars' as *;
+@use '../../shared/styles/mixins' as *;
 
-body{
+body {
   font-family: var(--font-public-sans);
-
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-.main{
-  flex:1;
+.main {
+  flex: 1;
 }

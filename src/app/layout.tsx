@@ -6,7 +6,9 @@ import { Public_Sans } from 'next/font/google';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 
-import { theme } from '@/shared/configs/mantine';
+import { BlackFridayBanner } from '@/widgets/black-friday-banner';
+
+import { theme } from '@/shared/configs';
 
 import './styles/globals.scss';
 
@@ -31,7 +33,11 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
         <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className={`${publicSans.variable} wrapper`}>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <BlackFridayBanner />
+
+          <main className="main">{children}</main>
+        </MantineProvider>
       </body>
     </html>
   );
