@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 
-// import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Public_Sans } from 'next/font/google';
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
