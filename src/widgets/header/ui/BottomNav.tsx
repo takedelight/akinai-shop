@@ -1,13 +1,16 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Button } from '@mantine/core';
 import { RiArrowDownSLine, RiPhoneLine } from '@remixicon/react';
 
+import { Link } from '@/shared/configs/i18n';
 import { HEADER_ACTIONS } from '@/shared/constants';
 
 import s from './styles.module.scss';
 
 export const BottomNav = () => {
+  const t = useTranslations('header.bottomNav');
+
   return (
     <div className={s.bottomNavWrapper}>
       <nav className={s.bottomNav}>
@@ -18,7 +21,7 @@ export const BottomNav = () => {
               variant="filled"
               rightSection={<RiArrowDownSLine />}
             >
-              All Category
+              {t('allCategory')}
             </Button>
           </li>
 
@@ -26,13 +29,13 @@ export const BottomNav = () => {
             <li key={action.title}>
               <Link className={s.actionLink} href={action.href}>
                 <action.icon />
-                {action.title}
+                {t(`nav.${action.title}`)}
               </Link>
             </li>
           ))}
         </ul>
 
-        <Link className={s.phone} href="tel:+1-202-555-0104">
+        <Link className={s.phone} href="tel:+1-202-555-0104" title={t('contactUs')}>
           <RiPhoneLine />
           +1-202-555-0104
         </Link>

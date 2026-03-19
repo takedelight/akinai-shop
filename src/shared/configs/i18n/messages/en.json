@@ -1,0 +1,41 @@
+{
+  "blackFridayBanner": {
+    "black": "Black",
+    "friday": "Friday",
+    "discount": "Up to <discount>{number}%</discount> OFF",
+    "shopNow": "SHOP NOW"
+  },
+  "header": {
+    "topNav": {
+      "welcomeText": "Welcome to Akinai商い online eCommerce store.",
+      "followUs": "Follow us:",
+      "languageMenu": {
+        "en": "English",
+        "uk": "Ukrainian",
+        "currentLanguage": "EN"
+      },
+      "currencyMenu": {
+        "usd": "Dollar",
+        "uah": "Hryvnia"
+      }
+    },
+    "middleNav": {
+      "searchPlaceholder": "Search for anything...",
+      "actions": {
+        "cart": "Go to cart",
+        "favorites": "Go to favorites",
+        "profile": "Go to profile"
+      }
+    },
+    "bottomNav": {
+      "allCategory": "All Categories",
+      "contactUs": "Contact Us",
+      "nav": {
+        "trackOrder": "Track Order",
+        "compare": "Compare",
+        "customerSupport": "Customer Support",
+        "needHelp": "Need Help?"
+      }
+    }
+  }
+}

@@ -1,14 +1,17 @@
+import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { RiHeart3Line, RiSearchLine, RiShoppingCart2Line, RiUserLine } from '@remixicon/react';
 
+import { Link } from '@/shared/configs/i18n';
 import { PAGES } from '@/shared/pages';
 import { InputWithButton } from '@/shared/ui';
 
 import s from './styles.module.scss';
 
-export const MiddleNav = () => {
+export const MiddleNav = async () => {
+  const t = await getTranslations('header.middleNav');
+
   return (
     <nav className={s.middleNav}>
       <Link className={s.logo} href={PAGES.HOME}>
@@ -21,26 +24,26 @@ export const MiddleNav = () => {
           wrapperProps={{ className: s.searchInput }}
           className={s.searchInput}
           radius={'xs'}
-          placeholder="Search for anything..."
+          placeholder={t('searchPlaceholder')}
           classNames={{ wrapper: s.searchInput, input: s.input }}
-          aria-label="Search for anything..."
+          aria-label={t('searchPlaceholder')}
           rightSection={<RiSearchLine />}
         />
       </div>
 
       <ul className={s.actions}>
         <li className={s.actionsItem}>
-          <Link className={s.actionsLink} href={PAGES.CART}>
+          <Link title={t('actions.cart')} className={s.actionsLink} href={PAGES.CART}>
             <RiShoppingCart2Line />
           </Link>
         </li>
         <li className={s.actionsItem}>
-          <Link className={s.actionsLink} href={PAGES.FAVORITE}>
+          <Link title={t('actions.favorites')} className={s.actionsLink} href={PAGES.FAVORITE}>
             <RiHeart3Line />
           </Link>
         </li>
         <li className={s.actionsItem}>
-          <Link className={s.actionsLink} href={PAGES.PROFILE}>
+          <Link title={t('actions.profile')} className={s.actionsLink} href={PAGES.PROFILE}>
             <RiUserLine />
           </Link>
         </li>

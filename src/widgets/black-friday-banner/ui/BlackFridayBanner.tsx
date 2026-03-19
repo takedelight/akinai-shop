@@ -1,29 +1,32 @@
-'use client';
-
-import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 
 import { Button } from '@mantine/core';
 import { RiArrowRightLongLine, RiCloseLine } from '@remixicon/react';
 
+import { Link } from '@/shared/configs/i18n';
 import { PAGES } from '@/shared/pages';
 
 import s from './styles.module.scss';
 
-export const BlackFridayBanner = () => {
+export const BlackFridayBanner = async () => {
+  const t = await getTranslations('BlackFridayBanner');
   return (
     <Link href={PAGES.HOME} className={s.banner}>
       <div className={s.content}>
         <div className={s.text}>
-          <span className={s.black}> Black</span>
-          <span className={s.friday}>Friday</span>
+          <span className={s.black}> {t('black')}</span>
+          <span className={s.friday}>{t('friday')}</span>
         </div>
 
         <p className={s.discount}>
-          Up to <span className={s.number}>59%</span> <span className={s.off}>OFF</span>
+          {t.rich('discount', {
+            number: 59,
+            discount: (chunks) => <span className={s.number}>{chunks}</span>,
+          })}
         </p>
 
         <Button color="warning" rightSection={<RiArrowRightLongLine />} className={s.button}>
-          SHOP NOW
+          {t('shopNow')}
         </Button>
       </div>
 

@@ -1,0 +1,41 @@
+{
+  "blackFridayBanner": {
+    "black": "Чорна",
+    "friday": "П'ятниця",
+    "discount": "Знижки до <discount>{number}%</discount>",
+    "shopNow": "КУПУВАТИ ЗАРАЗ"
+  },
+  "header": {
+    "topNav": {
+      "welcomeText": "Ласкаво просимо до інтернет-магазину Akinai商и.",
+      "followUs": "Ми в соцмережах:",
+      "languageMenu": {
+        "en": "English",
+        "uk": "Українська",
+        "currentLanguage": "UA"
+      },
+      "currencyMenu": {
+        "usd": "Долар",
+        "uah": "Гривня"
+      }
+    },
+    "middleNav": {
+      "searchPlaceholder": "Пошук товарів...",
+      "actions": {
+        "cart": "Перейти до кошика",
+        "favorites": "Перейти до обраного",
+        "profile": "Перейти до профілю"
+      }
+    },
+    "bottomNav": {
+      "allCategory": "Усі категорії",
+      "contactUs": "Зв'язатися з нами",
+      "nav": {
+        "trackOrder": "Відстежити замовлення",
+        "compare": "Порівняння",
+        "customerSupport": "Підтримка клієнтів",
+        "needHelp": "Потрібна допомога?"
+      }
+    }
+  }
+}
