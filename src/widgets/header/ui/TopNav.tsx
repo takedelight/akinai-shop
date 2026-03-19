@@ -1,21 +1,24 @@
-import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 
 import { CurrencyMenu } from '@/features/currency-menu';
 import { LanguageMenu } from '@/features/language-menu';
 
+import { Link } from '@/shared/configs/i18n';
 import { SOCIAL_LINKS } from '@/shared/constants';
 
 import s from './styles.module.scss';
 
-export const TopNav = () => {
+export const TopNav = async () => {
+  const t = await getTranslations('header.topNav');
+
   return (
     <div className={s.topNavWrapper}>
       <nav className={s.topnav}>
-        <p>Welcome to Akinai商い online eCommerce store. </p>
+        <p>{t('welcomeText')}</p>
 
         <ul className={s.rightSide}>
           <li className={s.follows}>
-            <h2 className={s.followsTitle}>Follow us:</h2>
+            <h2 className={s.followsTitle}>{t('followUs')}</h2>
             <ul className={s.followsList}>
               {SOCIAL_LINKS.map((link) => (
                 <li key={link.title}>
