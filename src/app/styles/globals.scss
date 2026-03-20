@@ -3,8 +3,9 @@
 @use '../../shared/styles/mixins' as *;
 
 body {
-  color: var(--neutral-00);
+  color: var(--neutral-900);
   font-family: var(--font-inter);
+  line-height: 1.2;
 }
 
 .wrapper {

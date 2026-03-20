@@ -72,5 +72,19 @@
       "facebook": "Продовжити з Facebook",
       "twitter": "Продовжити з Twitter"
     }
+  },
+  "profile": {
+    "aside": {
+      "dashboard": "Панель керування",
+      "orderHistory": "Історія замовлень",
+      "trackOrder": "Відстежити замовлення",
+      "shoppingCart": "Кошик",
+      "wishlist": "Список бажань",
+      "compare": "Порівняння",
+      "cardAndAddress": "Карти та адреси",
+      "browsingHistory": "Історія переглядів",
+      "settings": "Налаштування",
+      "logOut": "Вихід"
+    }
   }
 }

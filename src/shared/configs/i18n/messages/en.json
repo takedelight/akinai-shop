@@ -71,5 +71,19 @@
       "facebook": "Continue with Facebook",
       "twitter": "Continue with Twitter"
     }
+  },
+  "profile": {
+    "aside": {
+      "dashboard": "Dashboard",
+      "orderHistory": "Order History",
+      "trackOrder": "Track Order",
+      "shoppingCart": "Shopping Cart",
+      "wishlist": "Wishlist",
+      "compare": "Compare",
+      "cardAndAddress": "Browsing History",
+      "browsingHistory": "Browsing History",
+      "settings": "Setting",
+      "logOut": "Logout"
+    }
   }
 }

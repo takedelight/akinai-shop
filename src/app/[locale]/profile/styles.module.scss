@@ -1,0 +1,39 @@
+@use '../../../shared/styles/mixins' as *;
+@use '../../../shared/styles/vars' as *;
+
+.profileLayout {
+  @include container();
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .aside {
+    width: 270px;
+
+    .navbar {
+      @include flex-col(0);
+
+      padding: 16px 0;
+      border: 1px  solid var(--neutral-100);
+          border-radius: var(--rounded-sm);
+
+      .navbarItem {
+        .navbarLink {
+          @include flex-align-center(12);
+          padding: 10px 24px 10px 15px;
+          color: var(--neutral-600);
+          transition: all 0.3s ease-in-out;
+
+
+          &:hover {
+            background-color: var(--neutral-50);
+            color: var(--neutral-900);
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+  }
+}
