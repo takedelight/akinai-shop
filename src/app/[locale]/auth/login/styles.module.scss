@@ -1,0 +1,32 @@
+@use '../../../../shared/styles/mixins' as *;
+@use '../../../../shared/styles/vars' as *;
+
+.auth {
+  @include container;
+  @include center(100%);
+
+  .oauthLinks {
+    .oauthItem {
+      width: 250px;
+
+      .oauthLink {
+        @include text-body-sm(400);
+        @include flex-align-center(8);
+
+        border: 1px solid var(--neutral-600);
+        padding: 8px 16px;
+
+        border-radius: var(--rounded-md);
+
+        color: var(--neutral-700);
+
+        transition: all .2s ease-in-out;
+
+        &:hover{
+          //color: var(--neutral-00);
+          background-color: var(--neutral-100);
+        }
+      }
+    }
+  }
+}
