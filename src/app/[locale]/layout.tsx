@@ -8,6 +8,7 @@ import { notFound } from 'next/navigation';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 
+import { Footer } from '@/widgets/footer';
 import { Header } from '@/widgets/header';
 
 import { routing } from '@/shared/configs/i18n';
@@ -52,6 +53,8 @@ export default async function RootLayout({
             <Header />
 
             <main className="main">{children}</main>
+
+            <Footer />
           </MantineProvider>
         </NextIntlClientProvider>
       </body>

@@ -7,7 +7,7 @@
   },
   "header": {
     "topNav": {
-      "welcomeText": "Ласкаво просимо до інтернет-магазину Akinai商и.",
+      "welcomeText": "Ласкаво просимо до інтернет-магазину Akinai.",
       "followUs": "Ми в соцмережах:",
       "languageMenu": {
         "en": "English",
@@ -36,6 +36,33 @@
         "customerSupport": "Підтримка клієнтів",
         "needHelp": "Потрібна допомога?"
       }
+    }
+  },
+
+  "footer": {
+    "info": {
+      "customerSupports": "Служба підтримки"
+    },
+    "topCategory": {
+      "title": "Топ категорії",
+      "allProducts": "Всі товари"
+    },
+    "quickLinks": {
+      "title": "посилання",
+      "shopProducts": "Магазин",
+      "shoppingCart": "Кошик",
+      "wishlist": "Список бажань",
+      "compare": "Порівняння",
+      "trackOrder": "Відстежити замовлення",
+      "customerHelp": "Допомога покупцям",
+      "aboutUs": "Про нас"
+    },
+    "downloadApp": {
+      "title": "Завантажити додаток",
+      "description": "Завантажуйте з"
+    },
+    "popularTag": {
+      "title": "Популярні теги"
     }
   }
 }
