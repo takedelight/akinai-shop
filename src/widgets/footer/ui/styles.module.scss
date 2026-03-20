@@ -12,13 +12,13 @@
    .content {
      @include container;
 
-     padding: 70px 0;
+     padding: 50px 0;
 
 
      display: grid;
 
      gap: 24px;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-template-columns: 300px auto auto auto 340px;
 
      .info {
        width: 312px;
@@ -87,12 +87,10 @@
        @include flex-col(12);
 
        .downloadItem {
-         width: 200px;
 
          background-color: var(--neutral-800);
-         padding: 16px 20px;
-         border-radius: var(--rounded-sm);
-         transition: background-color 0.2s ease-in-out;
+
+
 
 
          p{
@@ -100,16 +98,19 @@
          }
 
          .downloadLink {
+           padding: 16px 20px;
+           border-radius: var(--rounded-sm);
+           transition: background-color 0.2s ease-in-out;
            @include flex-align-center(16);
            color: var(--neutral-00);
 
-
+           &:hover {
+             background-color: var(--neutral-700);
+           }
 
 
          }
-         &:hover {
-           background-color: var(--neutral-700);
-         }
+
        }
      }
 
