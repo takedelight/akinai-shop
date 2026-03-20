@@ -31,7 +31,7 @@ export async function main() {
       },
       create: {
         ...userData,
-        password: await hash(userData.password),
+        password: await hash(userData.password!),
       },
       update: {
         firstName: userData.firstName,
@@ -46,6 +46,7 @@ export async function main() {
     console.error('Під час створення адміністратора сталася помилка.');
   } finally {
     await prisma.$disconnect();
+    process.exit(0);
   }
 }
 

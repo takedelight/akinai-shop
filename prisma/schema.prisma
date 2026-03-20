@@ -18,7 +18,7 @@ model User {
   avatar   String?
   email    String   @unique
   role     UserRole @default(USER)
-  password String
+  password String?
 
   firstName String
   lastName  String?

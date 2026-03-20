@@ -148,3 +148,11 @@
   flex-direction: column;
   gap: $gap;
 }
+
+@mixin center($height, $flex-direction: row) {
+  height: $height;
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: center;
+  align-items: center;
+}

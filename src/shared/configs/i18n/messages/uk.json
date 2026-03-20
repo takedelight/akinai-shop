@@ -64,5 +64,13 @@
     "popularTag": {
       "title": "Популярні теги"
     }
+  },
+  "auth": {
+    "OAuth": {
+      "title": "Увійти через соцмережі",
+      "google": "Продовжити з Google",
+      "facebook": "Продовжити з Facebook",
+      "twitter": "Продовжити з Twitter"
+    }
   }
 }

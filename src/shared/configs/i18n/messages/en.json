@@ -63,5 +63,13 @@
     "popularTag": {
       "title": "Popular Tag"
     }
+  },
+  "auth": {
+    "OAuth": {
+      "title": "Login with social media",
+      "google": "Continue with Google",
+      "facebook": "Continue with Facebook",
+      "twitter": "Continue with Twitter"
+    }
   }
 }
