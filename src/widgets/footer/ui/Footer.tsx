@@ -118,6 +118,7 @@ export const Footer = async () => {
             <ul className={s.downloadList}>
               <li className={s.downloadItem}>
                 <Link
+                  target={'_blank'}
                   className={s.downloadLink}
                   href=" https://play.google.com/store/apps?hl=ru&pli=1"
                 >
@@ -130,6 +131,7 @@ export const Footer = async () => {
               </li>
               <li className={s.downloadItem}>
                 <Link
+                  target={'_blank'}
                   className={s.downloadLink}
                   href="https://apps.apple.com/ru/developer/apple/id284417353?mt=12"
                 >
