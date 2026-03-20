@@ -3,19 +3,35 @@
 
 .profileLayout {
   @include container();
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(12,1fr);
+  gap: 30px;
 
   margin-top: 40px;
   margin-bottom: 40px;
 
   .aside {
+    grid-column:1/3 ;
+
+
+
+    position: sticky;
+    top: 20px;
+    align-self: start;
+
     width: 270px;
+    left: 0;
+
 
     .navbar {
       @include flex-col(0);
 
       padding: 16px 0;
       border: 1px  solid var(--neutral-100);
-          border-radius: var(--rounded-sm);
+      border-radius: var(--rounded-sm);
 
       .navbarItem {
         .navbarLink {
@@ -35,5 +51,12 @@
   }
 
   .content {
+    border: 1px solid var(--neutral-700);
+    grid-column:3/13;
+
+    border: 1px  solid var(--neutral-100);
+    border-radius: var(--rounded-sm);
+
+    height: 100vh;
   }
 }
