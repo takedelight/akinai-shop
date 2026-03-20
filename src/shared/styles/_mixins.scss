@@ -142,3 +142,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin flex-col($gap: 12) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}

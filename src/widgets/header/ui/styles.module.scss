@@ -54,16 +54,6 @@
     @include container;
     @include flex-between;
 
-    .logo {
-      @include flex-align-center(8);
-
-      span {
-        color: var(--neutral-00);
-
-        @include text-heading-01;
-      }
-    }
-
     padding: 20px 0;
 
     .searchInput {

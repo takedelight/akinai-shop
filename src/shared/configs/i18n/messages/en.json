@@ -7,7 +7,7 @@
   },
   "header": {
     "topNav": {
-      "welcomeText": "Welcome to Akinai商い online eCommerce store.",
+      "welcomeText": "Welcome to Akinai online eCommerce store.",
       "followUs": "Follow us:",
       "languageMenu": {
         "en": "English",
@@ -36,6 +36,32 @@
         "customerSupport": "Customer Support",
         "needHelp": "Need Help?"
       }
+    }
+  },
+  "footer": {
+    "info": {
+      "customerSupports": "Customer Supports"
+    },
+    "topCategory": {
+      "title": "Top Categories",
+      "allProducts": "Browse All Product"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "shopProducts": "Shop Products",
+      "shoppingCart": "Shopping Cart",
+      "wishlist": "Wishlist",
+      "compare": "Compare",
+      "trackOrder": "Track Order",
+      "customerHelp": "Customer Help",
+      "aboutUs": "About Us"
+    },
+    "downloadApp": {
+      "title": "Download APp",
+      "description": "Get it now"
+    },
+    "popularTag": {
+      "title": "Popular Tag"
     }
   }
 }

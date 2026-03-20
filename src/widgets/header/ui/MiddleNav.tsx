@@ -14,9 +14,9 @@ export const MiddleNav = async () => {
 
   return (
     <nav className={s.middleNav}>
-      <Link className={s.logo} href={PAGES.HOME}>
+      <Link className="logo" href={PAGES.HOME}>
         <Image width={48} height={48} src="/logo.svg" alt="Logo icon" />
-        <span>Akinai商い</span>
+        <span>Akinai</span>
       </Link>
 
       <div>
