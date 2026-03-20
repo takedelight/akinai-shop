@@ -5,9 +5,15 @@
   @include container;
   @include center(100%);
 
+
+  .title{
+    @include text-heading-06;
+    color: var(--neutral-900);
+  }
   .oauthLinks {
     .oauthItem {
       width: 250px;
+
 
       .oauthLink {
         @include text-body-sm(400);
