@@ -1,0 +1,30 @@
+@use '../../../../shared/styles/mixins' as *;
+@use '../../../../shared/styles/vars' as *;
+
+.dashboard{
+
+  .header{
+    @include flex-col(6);
+
+    .headerTitle{
+      @include text-body-xl(600);
+
+      color: var(--neutral-900);
+    }
+
+    .headerText{
+      color: var(--neutral-700);
+      width: 720px;
+    }
+
+    .headerLink{
+      color: var(--secondary-500);
+      transition: color .2s ease-in-out ;
+
+      &:hover{
+        color: var(--secondary-700);
+
+      }
+    }
+  }
+}
