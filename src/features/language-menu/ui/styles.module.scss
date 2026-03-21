@@ -1,7 +1,9 @@
 @use '../../../shared/styles/vars' as *;
 @use '../../../shared/styles/mixins' as *;
 
+
 .menu {
+
   .item {
     @include flex-align-center;
     @include text-body-sm(400);

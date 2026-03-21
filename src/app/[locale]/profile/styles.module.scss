@@ -34,17 +34,29 @@
       border-radius: var(--rounded-sm);
 
       .navbarItem {
-        .navbarLink {
+        .navbarLink,
+        .logout {
           @include flex-align-center(12);
-          padding: 10px 24px 10px 15px;
+          padding: 8px 24px 10px 15px;
           color: var(--neutral-600);
           transition: all 0.3s ease-in-out;
-
+          width: 100%;
+          border: none;
+          background: transparent;
+          cursor: pointer;
 
           &:hover {
             background-color: var(--neutral-50);
             color: var(--neutral-900);
           }
+
+
+        }
+
+        .logout {
+          text-align: left;
+          font-weight: inherit;
+          font-size: inherit;
         }
       }
     }

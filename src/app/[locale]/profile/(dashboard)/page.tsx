@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { authOptions } from '@/shared/configs/auth';
 import { Link } from '@/shared/configs/i18n';
+import { PAGES } from '@/shared/pages';
 
 import s from './styles.module.scss';
 
@@ -18,22 +19,22 @@ const Dashboard = async () => {
         <p className={s.headerText}>
           {t.rich('header.text', {
             orders: (chunks) => (
-              <Link href="/orders" className={s.headerLink}>
+              <Link href={PAGES.PROFILE.ORDERS} className={s.headerLink}>
                 {chunks}
               </Link>
             ),
             address: (chunks) => (
-              <Link href="/addresses" className={s.headerLink}>
+              <Link href={PAGES.PROFILE.CARDS_ADDRESS} className={s.headerLink}>
                 {chunks}
               </Link>
             ),
             password: (chunks) => (
-              <Link href="/settings/password" className={s.headerLink}>
+              <Link href={PAGES.PROFILE.SETTINGS} className={s.headerLink}>
                 {chunks}
               </Link>
             ),
             details: (chunks) => (
-              <Link href="/settings/account" className={s.headerLink}>
+              <Link href={PAGES.PROFILE.SETTINGS} className={s.headerLink}>
                 {chunks}
               </Link>
             ),

@@ -27,3 +27,11 @@ body {
     @include text-heading-01;
   }
 }
+
+.mantine-Button-label,
+.mantine-Badge-label,
+.mantine-Tabs-tabLabel {
+
+  overflow: visible;
+
+}

@@ -23,7 +23,7 @@
       "searchPlaceholder": "Search for anything...",
       "actions": {
         "cart": "Go to cart",
-        "favorites": "Go to favorites",
+        "wishlist": "Go to favorites",
         "profile": "Go to profile"
       }
     },
@@ -89,7 +89,7 @@
       "dashboard": {
         "header": {
           "title": "Hello, ",
-          "welcomeText": "From your account dashboard you can easily check & view your <orders>Recent Orders</orders>, manage your <address>Shipping and Billing Addresses</address> and edit your <password>Password</password> and <details>Account Details</details>."
+          "text": "From your account dashboard you can easily check & view your <orders>Recent Orders</orders>, manage your <address>Shipping and Billing Addresses</address> and edit your <password>Password</password> and <details>Account Details</details>."
         }
       }
     }
