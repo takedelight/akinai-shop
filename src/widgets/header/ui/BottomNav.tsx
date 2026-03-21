@@ -35,9 +35,9 @@ export const BottomNav = () => {
           ))}
         </ul>
 
-        <Link className={s.phone} href="tel:+1-202-555-0104" title={t('contactUs')}>
+        <Link className={s.phone} href="tel:+38(000)-000-00-00" title={t('contactUs')}>
           <RiPhoneLine />
-          +1-202-555-0104
+          +380 00 000 00 00
         </Link>
       </nav>
     </div>

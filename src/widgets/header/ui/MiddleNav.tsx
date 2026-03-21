@@ -33,17 +33,21 @@ export const MiddleNav = async () => {
 
       <ul className={s.actions}>
         <li className={s.actionsItem}>
-          <Link title={t('actions.cart')} className={s.actionsLink} href={PAGES.CART}>
+          <Link title={t('actions.cart')} className={s.actionsLink} href={PAGES.PROFILE.CART}>
             <RiShoppingCart2Line />
           </Link>
         </li>
         <li className={s.actionsItem}>
-          <Link title={t('actions.favorites')} className={s.actionsLink} href={PAGES.FAVORITE}>
+          <Link
+            title={t('actions.wishlist')}
+            className={s.actionsLink}
+            href={PAGES.PROFILE.WISHLIST}
+          >
             <RiHeart3Line />
           </Link>
         </li>
         <li className={s.actionsItem}>
-          <Link title={t('actions.profile')} className={s.actionsLink} href={PAGES.PROFILE}>
+          <Link title={t('actions.profile')} className={s.actionsLink} href={PAGES.PROFILE.HOME}>
             <RiUserLine />
           </Link>
         </li>

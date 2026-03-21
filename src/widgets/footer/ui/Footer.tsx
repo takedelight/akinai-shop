@@ -41,8 +41,8 @@ export const Footer = async () => {
             <ul className={s.infoList}>
               <li className={s.customer}>
                 <span className={s.customerTitle}>{t('info.customerSupports')}</span>
-                <Link className={s.customerLink} href="tel:(629) 555-0129">
-                  (629) 555-0129
+                <Link className={s.customerLink} href="tel: +380 00 000 00 00">
+                  +380 00 000 00 00
                 </Link>
               </li>
 

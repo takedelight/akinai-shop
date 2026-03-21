@@ -23,7 +23,7 @@
       "searchPlaceholder": "Search for anything...",
       "actions": {
         "cart": "Go to cart",
-        "favorites": "Go to favorites",
+        "wishlist": "Go to favorites",
         "profile": "Go to profile"
       }
     },
@@ -70,6 +70,28 @@
       "google": "Continue with Google",
       "facebook": "Continue with Facebook",
       "twitter": "Continue with Twitter"
+    }
+  },
+  "profile": {
+    "aside": {
+      "dashboard": "Dashboard",
+      "orderHistory": "Order History",
+      "trackOrder": "Track Order",
+      "shoppingCart": "Shopping Cart",
+      "wishlist": "Wishlist",
+      "compare": "Compare",
+      "cardAndAddress": "Browsing History",
+      "browsingHistory": "Browsing History",
+      "settings": "Setting",
+      "logOut": "Logout"
+    },
+    "content": {
+      "dashboard": {
+        "header": {
+          "title": "Hello, ",
+          "text": "From your account dashboard you can easily check & view your <orders>Recent Orders</orders>, manage your <address>Shipping and Billing Addresses</address> and edit your <password>Password</password> and <details>Account Details</details>."
+        }
+      }
     }
   }
 }

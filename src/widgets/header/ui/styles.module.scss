@@ -14,7 +14,9 @@
       @include flex-between;
 
       color: var(--neutral-00);
-      padding: 16px 0;
+
+      padding-top: 16px;
+      padding-bottom: 16px;
 
       .rightSide {
         @include flex-align-center(24);
@@ -54,7 +56,9 @@
     @include container;
     @include flex-between;
 
-    padding: 20px 0;
+    padding-top: 20px;
+
+    padding-bottom: 20px;
 
     .searchInput {
       width: 640px;
@@ -87,8 +91,6 @@
     padding: 16px 0;
 
     .bottomNav {
-      padding: 0 !important;
-
       @include container;
       @include flex-between;
 
@@ -112,6 +114,7 @@
         color: var(--neutral-900);
         height: auto;
         padding: 17px 24px;
+        line-height: 1;
       }
 
       .phone {
