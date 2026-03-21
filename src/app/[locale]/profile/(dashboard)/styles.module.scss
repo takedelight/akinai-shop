@@ -2,6 +2,7 @@
 @use '../../../../shared/styles/vars' as *;
 
 .dashboard{
+  @include  flex-col(24);
 
   .header{
     @include flex-col(6);
@@ -29,4 +30,104 @@
       }
     }
   }
+}
+
+.accountCards{
+
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+
+
+  .accountCard{
+    @include flex-col(22);
+
+    border:1px solid var(--neutral-200);
+    border-radius: var(--rounded-md);
+
+
+    .cardHeader {
+      padding: 16px 0 16px 24px;
+
+      border-bottom: 1px solid var(--neutral-200);
+
+      .cardTitle{
+        @include text-label-03;
+
+        color: var(--neutral-900);
+        text-transform: uppercase;
+
+      }
+    }
+
+
+    .cardContent{
+      padding-left: 24px;
+
+      .accountInfo{
+        @include flex-col(20);
+
+
+        .avatar{
+          @include flex-align-center(12);
+
+          border-radius: var(--rounded-full);
+
+          .userInfo{
+            @include flex-col(4);
+
+            .userName{
+              @include text-body-md(600);
+
+              color: var(--neutral-900);
+            }
+
+            .userAddress{
+              color: var(--neutral-600);
+            }
+          }
+        }
+
+        .detailsList{
+          @include flex-col(8);
+
+          .detailsItem{
+              color: var(--neutral-900);
+
+            span{
+              color: var(--neutral-600);
+
+            }
+          }
+        }
+      }
+    }
+
+
+
+    .cardFooter {
+      padding: 16px 10px 16px 24px;
+
+
+      border-top: 1px solid var(--neutral-200);
+
+      .cardLink{
+        @include text-heading-07;
+
+        border:2px solid var(--primary-100);
+        padding: 12px 16px;
+
+        color: var(--primary-500);
+        text-transform: uppercase;
+
+        transition: border-color .2s ease-in-out ;
+
+        &:hover{
+          border-color: var(--primary-500);
+        }
+      }
+    }
+
+  }
+
 }
