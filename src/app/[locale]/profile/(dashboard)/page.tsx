@@ -24,7 +24,9 @@ const Dashboard = async () => {
 
   const avatarFallback = `${user?.firstName?.[0] || ''}${user?.lastName?.[0] || ''}`.toUpperCase();
 
-  const initial = user?.firstName || '' + user?.lastName || '';
+  const initial = `${user?.firstName || ''} ${user?.lastName || ''}`.trim();
+
+  console.log(user);
 
   return (
     <div className={s.dashboard}>
@@ -59,6 +61,72 @@ const Dashboard = async () => {
       </header>
 
       <ul className={s.accountCards}>
+        <li className={s.accountCard}>
+          <header className={s.cardHeader}>
+            <h2 className={s.cardTitle}>Account Info</h2>
+          </header>
+          <section className={s.cardContent}>
+            <div className={s.accountInfo}>
+              <div className={s.avatar}>
+                {' '}
+                <Avatar className={s.userAvatar} src={user?.avatar} size={48} radius={100}>
+                  {avatarFallback}
+                </Avatar>
+                <div className={s.userInfo}>
+                  <h3 className={s.userName}> {initial}</h3>
+                  <span className={s.userAddress}>Dhaka - 1207, Bangladesh</span>
+                </div>
+              </div>
+
+              <ul className={s.detailsList}>
+                <li className={s.detailsItem}>
+                  Email: <span>{user?.email}</span>
+                </li>
+                <li className={s.detailsItem}>
+                  Phone: <span>{user?.phoneNumber || 'Не додано'}</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <footer className={s.cardFooter}>
+            <Link className={s.cardLink} href={PAGES.PROFILE.SETTINGS}>
+              Edit Account
+            </Link>
+          </footer>
+        </li>
+        <li className={s.accountCard}>
+          <header className={s.cardHeader}>
+            <h2 className={s.cardTitle}>Account Info</h2>
+          </header>
+          <section className={s.cardContent}>
+            <div className={s.accountInfo}>
+              <div className={s.avatar}>
+                {' '}
+                <Avatar className={s.userAvatar} src={user?.avatar} size={48} radius={100}>
+                  {avatarFallback}
+                </Avatar>
+                <div className={s.userInfo}>
+                  <h3 className={s.userName}> {initial}</h3>
+                  <span className={s.userAddress}>Dhaka - 1207, Bangladesh</span>
+                </div>
+              </div>
+
+              <ul className={s.detailsList}>
+                <li className={s.detailsItem}>
+                  Email: <span>{user?.email}</span>
+                </li>
+                <li className={s.detailsItem}>
+                  Phone: <span>{user?.phoneNumber || 'Не додано'}</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <footer className={s.cardFooter}>
+            <Link className={s.cardLink} href={PAGES.PROFILE.SETTINGS}>
+              Edit Account
+            </Link>
+          </footer>
+        </li>
         <li className={s.accountCard}>
           <header className={s.cardHeader}>
             <h2 className={s.cardTitle}>Account Info</h2>
