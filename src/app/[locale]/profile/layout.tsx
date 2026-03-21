@@ -42,7 +42,7 @@ const ProfileLayout = async ({ children }: PropsWithChildren) => {
         <ul className={s.navbar}>
           {PROFILE_NAVBAR.map((item) => (
             <li className={s.navbarItem} key={item.title}>
-              <Link className={s.navbarLink} href={`/${item.href}`}>
+              <Link className={s.navbarLink} href={`${item.href}`}>
                 <item.icon />
                 {t(`aside.${item.title}`)}
               </Link>
