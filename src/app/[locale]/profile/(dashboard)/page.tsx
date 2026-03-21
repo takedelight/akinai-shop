@@ -14,9 +14,7 @@ const Dashboard = async () => {
   return (
     <div className={s.dashboard}>
       <header className={s.header}>
-        <h2 className={s.headerTitle}>
-          {t('header.title')} {session?.user.name}
-        </h2>
+        <h2 className={s.headerTitle}>{t('header.title')}</h2>
         <p className={s.headerText}>
           {t.rich('header.text', {
             orders: (chunks) => (
@@ -42,6 +40,12 @@ const Dashboard = async () => {
           })}
         </p>
       </header>
+
+      <ul className={s.accountCards}>
+        <li className={s.accountCard}>
+          <div className={s.cardTi}></div>
+        </li>
+      </ul>
     </div>
   );
 };

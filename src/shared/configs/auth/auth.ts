@@ -43,12 +43,15 @@ export const authOptions: AuthOptions = {
         });
 
         if (dbUser) {
-          token.role = dbUser.role;
-          token.id = dbUser.id;
+          return {
+            id: dbUser.id,
+            role: dbUser.role,
+          };
         }
       }
       return token;
     },
+
     async session({ session, token }) {
       if (session.user) {
         session.user.role = token.role as string;
